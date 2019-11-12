@@ -1,0 +1,78 @@
+/* Interview */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: lightblue;
+}
+
+body {
+	font-family: monospace;
+	line-height: 1.25;
+	margin: 0;
+	padding: 0;
+	background-color: lightblue;
+}
+
+header {
+	padding: 5em;
+	margin: 0 auto;
+	background-color:orange;
+	color:gray;
+	font-size: 30px;
+}
+main {
+	padding: 2em 0.25em;
+	perspective: 100em;
+  perspective-origin: top;
+	background-color: lightpink;
+}
+section {
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 1em 0;
+	transition: all 0.5s ease;
+	font-size: 1.0em;
+	filter: blur(3px)
+}
+
+section:nth-child(1) {
+	transform:scale(0.75) translateX(10em);
+}
+section:nth-child(2) {
+	transform: scale(-0.75) translateX(10em);
+}
+section:nth-child(3) {
+	transform: rotateX(52deg) scale(0.75) translateX(1em);
+}
+
+section:hover {
+	transform: rotate(0) scale(1) translate(0);
+	filter:blur(0);
+}
+h1 {
+	font-size: 4em;
+	font-family: monospace;
+	background-color: lightblue;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	line-height: 0.85;
+	font-weight: 400;
+}
+h2 {
+	color: lightyellow;
+	display: inline;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0 0 1em 0;
+	color: lightgreen;
+	font-style: italic;
+	font-family: cursive;
+	font-size: 1.5em;
+}
